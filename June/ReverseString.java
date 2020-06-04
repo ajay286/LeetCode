@@ -9,9 +9,10 @@ public class ReverseString {
 
 	public void reverseString(char[] s) {
 		int lb = 0, ub = s.length - 1;
+		char tempHolder;
 
 		while (lb < ub) {
-			char tempHolder = s[lb];
+			tempHolder = s[lb];
 			s[lb] = s[ub];
 			s[ub] = tempHolder;
 			lb++;
